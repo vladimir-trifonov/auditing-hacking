@@ -1,0 +1,81 @@
+<style> code { white-space: pre-wrap; display: block; background-color: #eee; }.executed { background-color: #afa; }.reverted { background-color: #ffa; }.unexecuted { background-color: #faa; }.neutral { background-color: #eee; }</style><b>/Users/vladimirtrifonov/src/playground/solidity/rare-skills/advanced-solidity-bootcamp/auditing&amp;hacking/week6/capture_the_ether-token_sale_challenge/TestTokenSaleChallenge.sol</b>
+<code>
+  1 |     | <span class='neutral'>// SPDX-License-Identifier: MIT</span>
+  2 |     | <span class='neutral'>pragma solidity ^0.4.21;</span>
+  3 |     | <span class='neutral'></span>
+  4 |     | <span class='neutral'>import &quot;./TokenSaleChallenge.sol&quot;;</span>
+  5 |     | <span class='neutral'></span>
+  6 |     | <span class='neutral'>/// @dev Run the template with</span>
+  7 |     | <span class='neutral'>///      ```</span>
+  8 |     | <span class='neutral'>///      solc-select use 0.8.19</span>
+  9 |     | <span class='neutral'>///      echidna ./TestTokenSaleChallenge.sol --contract TestTokenSaleChallenge --config ./config.yaml</span>
+ 10 | *r  | <span class='executed'>///      ```</span>
+ 11 |     | <span class='neutral'>contract TestTokenSaleChallenge {</span>
+ 12 |     | <span class='neutral'>    TokenSaleChallenge token;</span>
+ 13 |     | <span class='neutral'></span>
+ 14 |     | <span class='neutral'>    constructor() payable {</span>
+ 15 |     | <span class='unexecuted'>        token = new TokenSaleChallenge(this);</span>
+ 16 |     | <span class='unexecuted'>        token.send(1 ether);</span>
+ 17 |     | <span class='neutral'>    }</span>
+ 18 |     | <span class='neutral'></span>
+ 19 | *r  | <span class='executed'>    function test_buy(uint256 amount) public {</span>
+ 20 | *r  | <span class='executed'>        amount = amount &gt; 0 ? amount : 100000000;</span>
+ 21 |     | <span class='neutral'></span>
+ 22 | *r  | <span class='executed'>        token.buy.value(amount * 1 ether)(amount);</span>
+ 23 |     | <span class='neutral'></span>
+ 24 | *   | <span class='executed'>        assert(!token.isComplete());</span>
+ 25 |     | <span class='neutral'>    }</span>
+ 26 |     | <span class='neutral'></span>
+ 27 | *r  | <span class='executed'>    function test_sell(uint256 amount) public {</span>
+ 28 | *r  | <span class='executed'>        uint256 balance = token.balanceOf(this);</span>
+ 29 | *r  | <span class='executed'>        require(balance &gt; 0);</span>
+ 30 | *r  | <span class='executed'>        amount = amount &gt; 0 ? amount : 100000000;</span>
+ 31 | *r  | <span class='executed'>        amount = 1 + (amount % balance);</span>
+ 32 |     | <span class='neutral'></span>
+ 33 | *r  | <span class='executed'>        token.sell(amount);</span>
+ 34 |     | <span class='neutral'></span>
+ 35 | *   | <span class='executed'>        assert(!token.isComplete());</span>
+ 36 |     | <span class='neutral'>    }</span>
+ 37 |     | <span class='neutral'></span>
+ 38 |     | <span class='neutral'>    function() public payable {}</span>
+ 39 |     | <span class='neutral'>}</span>
+ 40 |     | <span class='neutral'></span>
+
+</code>
+<br />
+
+<b>/Users/vladimirtrifonov/src/playground/solidity/rare-skills/advanced-solidity-bootcamp/auditing&amp;hacking/week6/capture_the_ether-token_sale_challenge/TokenSaleChallenge.sol</b>
+<code>
+  1 |     | <span class='neutral'>// SPDX-License-Identifier: MIT</span>
+  2 |     | <span class='neutral'>pragma solidity ^0.4.21;</span>
+  3 | *r  | <span class='executed'></span>
+  4 |     | <span class='neutral'>contract TokenSaleChallenge {</span>
+  5 | *r  | <span class='executed'>    mapping(address =&gt; uint256) public balanceOf;</span>
+  6 | *r  | <span class='executed'>    uint256 constant PRICE_PER_TOKEN = 1 ether;</span>
+  7 |     | <span class='neutral'></span>
+  8 |     | <span class='unexecuted'>    function TokenSaleChallenge(address _player) public {}</span>
+  9 |     | <span class='neutral'></span>
+ 10 | *   | <span class='executed'>    function isComplete() public view returns (bool) {</span>
+ 11 | *   | <span class='executed'>        return address(this).balance &lt; 1 ether;</span>
+ 12 |     | <span class='neutral'>    }</span>
+ 13 |     | <span class='neutral'></span>
+ 14 | *   | <span class='executed'>    function buy(uint256 numTokens) public payable {</span>
+ 15 | *   | <span class='executed'>        require(msg.value == numTokens * PRICE_PER_TOKEN);</span>
+ 16 |     | <span class='neutral'></span>
+ 17 | *   | <span class='executed'>        balanceOf[msg.sender] += numTokens;</span>
+ 18 |     | <span class='neutral'>    }</span>
+ 19 |     | <span class='neutral'></span>
+ 20 | *r  | <span class='executed'>    function sell(uint256 numTokens) public {</span>
+ 21 | *r  | <span class='executed'>        require(balanceOf[msg.sender] &gt;= numTokens);</span>
+ 22 |     | <span class='neutral'></span>
+ 23 | *r  | <span class='executed'>        balanceOf[msg.sender] -= numTokens;</span>
+ 24 | *r  | <span class='executed'>        msg.sender.transfer(numTokens * PRICE_PER_TOKEN);</span>
+ 25 |     | <span class='neutral'>    }</span>
+ 26 |     | <span class='neutral'></span>
+ 27 |     | <span class='neutral'>    function() public payable {}</span>
+ 28 |     | <span class='neutral'>}</span>
+ 29 |     | <span class='neutral'></span>
+
+</code>
+<br />
+

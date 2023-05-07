@@ -1,0 +1,6 @@
+testLimit: 1000000
+coverage: true
+corpusDir: corpus
+seqLen: 25
+testMode: assertion
+balanceContract: 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
