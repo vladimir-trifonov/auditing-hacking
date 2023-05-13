@@ -12,7 +12,7 @@ contract Player {
 
     function deposit() external payable {
         uint256 amount = bank.token().balanceOf(this);
-        bank.token().transfer(bank, myBamountalance);
+        bank.token().transfer(bank, amount);
     }
 
     function attack(uint256 amount) public {
